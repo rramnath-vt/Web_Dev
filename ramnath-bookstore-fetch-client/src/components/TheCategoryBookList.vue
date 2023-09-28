@@ -1,0 +1,43 @@
+<script setup lang="ts">
+import { defineProps } from "vue"; // needed if you don't want an error below
+import type { BookItem } from "@/types";
+import CategoryBookListItem from "@/components/CategoryBookListItem.vue";
+const props = defineProps<{
+  bookList: BookItem[];
+}>();
+</script>
+
+<style scoped>
+
+ul {
+  margin-left: 5px;
+  bottom:100px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 0.5em;
+}
+
+@media (max-width: 1000px) {
+  ul{
+    margin-left: 5px;
+    bottom:100px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5em;
+  }
+}
+/*ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  gap: 1em;
+}*/
+</style>
+
+<template>
+  <ul>
+    <template v-for="book in props.bookList" :key="book.bookId">
+      <category-book-list-item :book="book"></category-book-list-item>
+    </template>
+  </ul>
+</template>

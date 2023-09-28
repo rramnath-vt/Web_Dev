@@ -1,0 +1,4 @@
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Beach Read', 'Emily Henry', '', 200, 0, TRUE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Kiss Quotient', 'Helen Hoang', '', 275, 0, FALSE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('One Last Stop', 'Casey McQuiston', '', 210, 0, FALSE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Wedding Date', 'Jasmine Guillory', '', 399, 0, TRUE, FALSE, 1005);
