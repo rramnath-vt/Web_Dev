@@ -1,8 +1,7 @@
 <script setup lang="ts">
+import { inject } from "vue";
 import type { CategoryItem } from "@/types";
-let response = await fetch("http://localhost:8080/RamnathBookstoreFetch/api/categories/");
-let data = await response.json();
-let categoryList = data as CategoryItem[];
+const categoryList = inject("categoryList") as CategoryItem[];
 </script>
 
 <style scoped>
@@ -11,9 +10,10 @@ let categoryList = data as CategoryItem[];
   position: relative;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
   .categories-button {display:flex; align-items:center;padding: 15px;line-height: 20px;position:relative;bottom: 45px;}
+  .header-dropdown ul {bottom :-100px;}
 
 }
 
@@ -27,6 +27,7 @@ let categoryList = data as CategoryItem[];
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   padding-left: 10px;
   padding-right: 10px;
+  width: 128px;
 }
 
 .categories-button:hover{
@@ -36,7 +37,7 @@ let categoryList = data as CategoryItem[];
 
 .header-dropdown ul {
   background-color: white;
-  color: black;
+  color: white;
   display: none;
 }
 
@@ -74,7 +75,7 @@ button {
 
 <template>
   <div class="header-dropdown">
-    <button class="button categories-button">Categories<i class="fa-solid fa-caret-down"></i></button>
+    <button class="button categories-button">Categories<i class="fa-solid fa-caret-down" style="margin-left: 10px;"></i></button>
     <ul>
       <li v-for="category in categoryList" :key="category.categoryId">
         <router-link :to="'/category/' + category.name">

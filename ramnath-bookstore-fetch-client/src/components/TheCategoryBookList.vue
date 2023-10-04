@@ -13,11 +13,11 @@ ul {
   margin-left: 5px;
   bottom:100px;
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(3, 3fr);
   gap: 0.5em;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 650px) {
   ul{
     margin-left: 5px;
     bottom:100px;
@@ -26,12 +26,17 @@ ul {
     gap: 0.5em;
   }
 }
-/*ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1em;
-  gap: 1em;
-}*/
+
+@media (min-width: 651px) and (max-width: 1000px){
+  ul{
+    margin-left: 5px;
+    bottom:100px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 0.5em;
+  }
+}
+
 </style>
 
 <template>

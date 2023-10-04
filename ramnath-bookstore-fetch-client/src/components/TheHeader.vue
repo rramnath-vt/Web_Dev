@@ -15,6 +15,10 @@ header {
 
 .text-logo {
   font-family: 'Inde Flower', cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin-right: 20px; 
 }
 
 .search-bar {
@@ -24,7 +28,9 @@ header {
 @media (max-width: 1000px) {
   header {
     flex-direction: column;
+    
   }
+
   .title-and-search-bar{position:relative;bottom: 25px;}
   .search-bar {max-width:150px;}
   i.fa-solid.fa-magnifying-glass{margin-left: 3px;}
@@ -50,9 +56,7 @@ header {
   align-items: center;
 }
 
-.text-logo {
-  margin-right: 20px; /* Adjust the margin as needed */
-}
+
 
 .search-bar {
   /*margin-right: 10px;*/
@@ -60,6 +64,7 @@ header {
   width: 300px;
   margin: 0 auto; /* Allow the search bar to grow and take available space */
   border-radius: 6%;
+  margin-right: 1px;
 }
 
 .search-button {
@@ -76,6 +81,7 @@ i.fa-solid.fa-magnifying-glass {
   text-align: center;
   margin-left: 3px;
   margin-right: 20px;
+  color: black;
 }
 
 i.fa-solid.fa-magnifying-glass:hover{
@@ -166,6 +172,7 @@ i.fa-solid.fa-cart-shopping {
   height: 40px;
 }
 
+.bookstore-logo{position: relative; left: 5px;}
 
 .loginfun {
   display: flex;
@@ -232,11 +239,11 @@ i.fa-solid.fa-cart-shopping {
       </router-link>
     </section>
     <section class="title-and-search-bar">
-      <h1 class="text-logo">BiblioHouse</h1>
+      <router-link to="/" class="text-logo">BiblioHouse</router-link>
       <div class="search-container">
         <form action="category.html" class="search-bar-right">
           <input type="text" class="search-bar" placeholder="Search by Title, Author or Keywords" />
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <router-link to="/category/Classics"><i class="fa-solid fa-magnifying-glass"></i></router-link>
         </form>
       </div>
     </section>
