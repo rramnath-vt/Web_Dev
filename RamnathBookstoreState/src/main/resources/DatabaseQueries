@@ -1,0 +1,10 @@
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Dracula', 'Bram Stoker', '', 375, 0, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Treasure Island', 'Robert Louis Stevenson', '', 365, 0, FALSE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('His Dark Materials', 'Philip Pullman', '', 310, 0, FALSE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Way of Kings', 'Brandon Sanderson', '', 419, 0, TRUE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Team of Rivals', 'Doris Kearns Goodwin', '', 310, 0, FALSE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Silk Roads', 'Peter Frankopan', '', 599, 0, TRUE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Sharp Objects', 'Gillian Flynn', '', 470, 0, FALSE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Reversal', 'Michael Connelly', '', 329, 0, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Emma', 'Jane Austen', '', 210, 0, FALSE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Dear John', 'Nicholas Sparks', '', 399, 0, TRUE, FALSE, 1005);
