@@ -1,0 +1,85 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/RamnathBookstoreOrder/api/categories
+Accept: application/json
+
+
+###
+
+# curl 'http://localhost:8080/RamnathBookstoreOrder/api/orders' -X POST -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br' -H 'Referer: http://localhost:5173/' -H 'Content-Type: application/json' -H 'Origin: http://localhost:5173' -H 'DNT: 1' -H 'Connection: keep-alive' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-site' --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1008,"title":"Harry Potter and the Sorcerers Stone","author":"J K Rowling","description":"","price":799,"rating":0,"isPublic":true,"isFeatured":false,"categoryId":1002},"quantity":1}]},"customerForm":{"name":"Ramnath","address":"302 Broce Dr","phone":"3472167087","email":"rramnath@vt.edu","ccNumber":"371449635398431","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+###
+
+# curl 'http://localhost:8080/RamnathBookstoreOrder/api/orders' -X POST -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br' -H 'Referer: http://localhost:8080/RamnathBookstoreOrder/client' -H 'Content-Type: application/json' -H 'Origin: http://localhost:8080' -H 'DNT: 1' -H 'Connection: keep-alive' -H 'Cookie: JSESSIONID=19AB9B5DE721685F1D47117E433B4DFE' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1008,"title":"Harry Potter and the Sorcerers Stone","author":"J K Rowling","description":"","price":799,"rating":0,"isPublic":true,"isFeatured":false,"categoryId":1002},"quantity":1}]},"customerForm":{"name":"Ramnath","address":"302 Broce Dr","phone":"3472167087","email":"rramnath@vt.edu","ccNumber":"371449635398431","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+POST http://localhost:8080/RamnathBookstoreOrder/api/orders
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: http://localhost:8080/RamnathBookstoreOrder/client
+Origin: http://localhost:8080
+DNT: 1
+Connection: keep-alive
+Cookie: JSESSIONID=19AB9B5DE721685F1D47117E433B4DFE
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1008,
+          "title": "Harry Potter and the Sorcerers Stone",
+          "author": "J K Rowling",
+          "description": "",
+          "price": 799,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1002
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "",
+    "address": "302 Broce Dr",
+    "phone": "3472167087",
+    "email": "rramnath@vt.edu",
+    "ccNumber": "371449635398431",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+
+
+
+###
+
+
+###
+
+
+
+###
+
+
+###
+
+
+
+###
+
+
+###
